@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lautaro Bauza| Language Service Provider</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet" />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="media/favicon (2).svg" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f8aeddc0bb.js" crossorigin="anonymous"></script>
+    <!-- Libreria AOS css -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--  Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Toastify css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+    <!-- CSS local -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation Bar inicio -->
+      <nav class="navbar navbar-expand-lg navbar-light" data-aos="flip-up">
+        <div class="container-fluid">
+          <!-- Logo inicio-->
+          <a class="brand" href="index.html">Lautaro Bauza</a>
+          <!-- Logo fin -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <!-- Inicio -->
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#hero-image">Home</a>
+              </li>
+              <!-- Acerca de -->
+              <li class="nav-item">
+                <a class="nav-link" href="#about-me">About</a>
+              </li>
+              <!-- Servicios -->
+              <li class="nav-item">
+                <a class="nav-link" href="#search-courses">Services</a>
+              </li>
+              <!-- Contacto -->
+              <li class="nav-item">
+                <a class="nav-link" href="#form">Contact</a>
+              </li>
+              <!-- Carrito -->
+              <li class="nav-item">
+                <a class="nav-link" href="#shoppingCart"><i class="fa-solid fa-cart-shopping"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation Bar cierre -->
+    </header>
+
+    <main>
+      <!-- Hero image inicio -->
+      <section class="hero-image" id="hero-image">
+        <article>
+          <div>
+            <h2>Hello, and welcome to my website. This is....</h2>
+            <h1>Professor Lautaro</h1>
+          </div>
+        </article>
+      </section>
+      <!-- Hero image cierre -->
+      <!-- About me inicio -->
+      <section class="aboutMe container" id="about-me">
+        <article data-aos="fade-up">
+          <div class="headingTwo-container container">
+            <h2 class="aboutMe_headingTwo">WHO AM I?</h2>
+          </div>
+          <div class="container">
+            <div class="row">
+              <!-- Imágen facultad de derecho -->
+              <div class="col-12 col-lg-6 mb-5">
+                <img src="media/fduba2.jpg" alt="Law School" class="lawSchool-img img-fluid" />
+              </div>
+              <!-- Breve descripción sobre mí -->
+              <div class="col-12 col-lg-6 mb-5">
+                <p class="description-me">
+                  Hi! This is Lautaro. I am 21 and I am studying to become a certified translator at the Law School in Buenos Aires. I am a passionate student of English and I have been giving classes
+                  for the last two years. I made this website on my own thanks to the knowledge I acquired this year in the field of programming. My main objective is to help you go through the
+                  beautiful and challenging language learning process. Want me to help you? Keep scrolling, then! 😉
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- About me cierre -->
+      <!-- Reloj digital inicio -->
+      <section id="digitalClock">
+        <div class="container digital-clock" id="clock" data-aos="flip-down"></div>
+      </section>
+      <!-- Reloj digital cierre -->
+      <hr />
+      <!-- Servicios inicio -->
+      <section id="services" data-aos="fade-left">
+        <div class="container">
+          <h2 class="myCourses">courses</h2>
+          <!-- Formulario que filtra los productos inicio -->
+          <form id="search-courses" class="barraBuscar">
+            <input type="text" placeholder="Which course are you looking for?..." />
+          </form>
+          <!-- Formulario que filtra los productos cierre -->
+          <div class="row" id="cards"></div>
+        </div>
+      </section>
+      <!-- Servicios cierre -->
+      <hr />
+      <!-- Carrito inicio -->
+      <section id="shoppingCart">
+        <div class="container">
+          <!--  Carrito de compras inicio -->
+          <h2>Shopping Cart</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Action</th>
+                <th scope="col">Total</th>
+              </tr>
+            </thead>
+            <tbody id="items"></tbody>
+            <tfoot>
+              <tr id="footer">
+                <th scope="row" colspan="5">Empty cart- start buying!</th>
+              </tr>
+            </tfoot>
+          </table>
+          <!-- Carrito de compras cierre -->
+        </div>
+      </section>
+      <!-- Carrito cierre -->
+      <!-- Formulario inicio-->
+      <section id="form">
+        <div class="form-container">
+          <form data-aos="zoom-in" class="contact-form" action="https://formspree.io/f/meqdjdkl" method="POST" id="formulario">
+            <h3>LET'S GET IN TOUCH!</h3>
+            <!-- Nombre -->
+            <input type="text" id="name" name="Name" placeholder="Please, enter your name" required />
+            <!-- Correo -->
+            <input type="email" id="email" name="Email" placeholder="Please, enter your email" required />
+            <!-- Teléfono -->
+            <input type="tel" id="phone" name="Phone" placeholder="Please, enter your phone number" required />
+            <!-- Mensaje -->
+            <textarea id="message" rows="4" name="Message" placeholder=" How can I help you?"></textarea>
+            <!-- Enviar -->
+            <button type="submit" id="btnEnviar">SEND</button>
+          </form>
+        </div>
+      </section>
+      <!-- Formulario cierre-->
+      <!--  Botón para ir a arriba inicio -->
+      <section>
+        <div>
+          <a class="btnArriba" href="#hero-image" title="Go up">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" fill="#FFF" viewBox="0 0 384 512">
+                <path
+                  d="M374.6 246.6C368.4 252.9 360.2 256 352 256s-16.38-3.125-22.62-9.375L224 141.3V448c0 17.69-14.33 31.1-31.1 31.1S160 465.7 160 448V141.3L54.63 246.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160C387.1 213.9 387.1 234.1 374.6 246.6z"
+                />
+              </svg>
+            </span>
+          </a>
+        </div>
+      </section>
+      <!-- Botón para ir a arriba cierre -->
+    </main>
+
+    <!-- TEMPLATES -->
+    <!--  Template footer -->
+    <template id="template-footer">
+      <th scope="row" colspan="2">Total</th>
+      <td>10</td>
+      <td>
+        <button class="btn btn-danger btn-sm" id="vaciar-carrito">Empty cart</button>
+        <button class="btn btn-danger btn-sm" id="btn-comprar">Buy</button>
+      </td>
+      <td class="font-weight-bold">$ <span>5000</span></td>
+    </template>
+    <!--  Template del carrito -->
+    <template id="template-carrito">
+      <tr>
+        <th scope="row">id</th>
+        <td>Café</td>
+        <td>1</td>
+        <td>
+          <button class="btn btn-info btn-sm">+</button>
+          <button class="btn btn-danger btn-sm">-</button>
+        </td>
+        <td>$ <span>500</span></td>
+      </tr>
+    </template>
+    <!-- Template de la card de cada producto -->
+    <template id="template-card">
+      <div class="col-12 mb-2 col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <img src="" alt="" class="card-img-top" />
+            <h5>Titulo</h5>
+            <p></p>
+            <p>precio</p>
+            <button class="btn btn-dark">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Footer inicio -->
+    <footer class="text-white pt-5 pb-4">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-800">Company Name</h5>
+            <p>
+              The purpose of this site is to offer you my services as a professional in the Spanish and English language. I will do my best to help you in this beautiful process of learning a new
+              language.
+            </p>
+          </div>
+          <!-- Footer- Productos inicio -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-800">Products</h5>
+            <p>
+              <a href="" class="text-white">Spanish Grammar Course</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Spanish Pronunciation Course</a>
+            </p>
+            <p>
+              <a href="" class="text-white">Spanish Vocabulary Course</a>
+            </p>
+          </div>
+          <!-- Footer- Productos cierre-->
+          <!-- Footer- Enlaces útiles inicio -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-800">Useful links</h5>
+            <p>
+              <a href="https://juanmacarlupu.com/" class="text-white" target="_blank" rel="nofollow">Translation Courses 1</a>
+            </p>
+            <p>
+              <a href="https://www.traductores.org.ar/" class="text-white" target="_blank" rel="nofollow">Sworn Translators' Association of the City of Buenos Aires</a>
+            </p>
+            <p>
+              <a href="https://traduversia.com/" class="text-white" target="_blank" rel="nofollow">Translation Courses 2</a>
+            </p>
+          </div>
+          <!-- Footer- Enlaces útiles cierre-->
+          <!-- Footer - Contacto inicio -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h5 class="text-uppercase mb-4 font-weight-800">Contact</h5>
+            <p>
+              <i class="fa-solid fa-house">Buenos Aires, AR</i>
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope">Leoemanuel2009.ls@gmail.com</i>
+            </p>
+            <p>
+              <i class="fa-solid fa-phone">+54 1150410115</i>
+            </p>
+          </div>
+          <!-- Footer - Contacto cierre -->
+        </div>
+        <hr class="mb-4" />
+        <div class="row align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p>
+              &copy; All rights reserved by:
+              <a href=""><strong class="lautaro">Lautaro Bauza</strong></a>
+            </p>
+          </div>
+          <!-- Footer- Redes sociales inicio -->
+          <div class="col-md-5 col-lg-4">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com/leo_seoane/" class="btn-floating btn-sm text-white" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.facebook.com/groups/525701902361377" class="btn-floating btn-sm text-white" target="_blank" rel="nofollow"><i class="fa-brands fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.linkedin.com/in/lautaro-bauza-399899251/" class="btn-floating btn-sm text-white" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Footer- Redes sociales cierre-->
+        </div>
+      </div>
+    </footer>
+    <!-- Footer cierre -->
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Libreria AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Sweet Alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Toastify JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- JavaScript local -->
+    <script src="js/app.js"></script>
+  </body>
+</html>
+-

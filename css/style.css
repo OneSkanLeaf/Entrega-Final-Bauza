@@ -1,0 +1,431 @@
+/* Css general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  scroll-behavior: smooth;
+  background-color: #ece5de;
+  font-family: "Benne", serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+/* Navigation Bar */
+.brand {
+  color: beige;
+  text-decoration: none;
+  font-size: 1.3em;
+  margin-left: 20px;
+}
+.brand:hover {
+  color: beige;
+  font-weight: bold;
+}
+.collapse {
+  justify-content: end;
+}
+.navbar {
+  background-color: #413224;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: beige;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-right: 30px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #000;
+  font-weight: bold;
+  background-color: #f6f2ef;
+  border-radius: 10%;
+  -webkit-border-radius: 10%;
+  -moz-border-radius: 10%;
+  -ms-border-radius: 10%;
+  -o-border-radius: 10%;
+}
+.navbar-light .navbar-toggler {
+  border: transparent;
+}
+/* Hero image */
+.hero-image {
+  min-height: 100vh;
+  background-image: url("../media/Imagen-Ushuaia.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin-bottom: 300px;
+}
+
+.hero-image article {
+  width: 100%;
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 30px;
+}
+.hero-image article h1,
+.hero-image article h2 {
+  font-weight: 900;
+  line-height: 1.2;
+  margin: 0.5em 0;
+  font-family: "Raleway", sans-serif;
+}
+/* Acerca de  */
+#about-me {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 270px;
+  margin-top: 270px;
+}
+
+.aboutMe_headingTwo {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.lawSchool-img {
+  width: 600px;
+  height: auto;
+  border-radius: 2%;
+  -webkit-border-radius: 2%;
+  -moz-border-radius: 2%;
+  -ms-border-radius: 2%;
+  -o-border-radius: 2%;
+}
+.description-me {
+  color: #000;
+  line-height: 50px;
+  font-size: 18px;
+}
+/* Sweet alert */
+.swal-header {
+  text-transform: uppercase;
+  color: #000;
+  letter-spacing: 5px;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+.swal-confirm {
+  background-color: #513e2e;
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.swal-confirm:hover {
+  color: #fff;
+  background-color: #775b45;
+  border: none;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.swal-cancel {
+  color: #000;
+}
+.swal-footer {
+  color: #715740;
+  font-weight: 800;
+}
+/* Reloj digital */
+#digitalClock {
+  margin-top: 100px;
+  margin-bottom: 200px;
+  background-color: #413224;
+  padding: 70px;
+}
+.digital-clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.digital-clock h2 {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.5rem;
+  margin-top: 20px;
+  color: #fff;
+}
+.clock-div {
+  width: 25%;
+  padding: 20px;
+  text-align: center;
+  font-size: 2.2rem;
+  color: #413224;
+  margin-top: 10px;
+  font-weight: 800;
+  text-shadow: 7px 7px 6px rgba(150, 150, 150, 1);
+  color: #fff;
+}
+/*  Buscador y filtrador de productos */
+.container .barraBuscar {
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+.barraBuscar input {
+  width: 100%;
+  padding: 10px;
+}
+/* Productos */
+#services {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.container .myCourses {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.card {
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+.card-body img {
+  width: 100%;
+  height: 100%;
+}
+.card-body h5 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-top: 10px;
+}
+.card-body p {
+  line-height: 2;
+  font-size: 16px;
+  text-align: center;
+}
+.card-body .btn-dark {
+  width: 50%;
+  border: none;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  background-color: #513e2e;
+  margin-bottom: 5px;
+}
+.card-body .btn-dark:hover {
+  font-weight: 800;
+  background-color: #755a44;
+}
+/* Carrito de compras */
+.table {
+  display: inline-table;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#shoppingCart {
+  width: 100%;
+  height: 100vh;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 20px;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shoppingCart h2 {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 2.5rem;
+}
+.btn-info {
+  background-color: #413224;
+  color: #fff;
+  border: none;
+  width: auto;
+  margin: 10px;
+}
+.btn-info:hover {
+  background-color: #614b37;
+  color: #fff;
+  font-weight: 900;
+}
+.btn-danger {
+  background-color: #775b45;
+  border: none;
+  width: auto;
+  margin: 10px;
+}
+.btn-danger:hover {
+  background-color: #b68c6c;
+  color: #fff;
+  font-weight: 900;
+}
+#vaciar-carrito {
+  text-transform: uppercase;
+  background-color: #fff;
+  color: red;
+  font-weight: 900;
+  border: 1px solid red;
+  width: auto;
+}
+#vaciar-carrito:hover {
+  background-color: red;
+  color: #fff;
+  border: none;
+}
+#btn-comprar {
+  text-transform: uppercase;
+  background-color: #000;
+  color: #f6f2ef;
+  font-weight: 900;
+  border: none;
+  width: auto;
+}
+#btn-comprar:hover {
+  background-color: rgb(38, 38, 38);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  width: auto;
+}
+/* Formulario de contacto */
+.form-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #413224;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.contact-form {
+  background-color: #f6f2ef;
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-border-radius: 10px;
+}
+.contact-form h3 {
+  color: #413224;
+  font-weight: 800;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contact-form input,
+.contact-form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background-color: rgb(210, 210, 210);
+  font-size: 16px;
+}
+.contact-form textarea {
+  resize: none;
+}
+.contact-form button {
+  padding: 15px;
+  background-color: #bea38c;
+  color: #000;
+  font-size: 18px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+.contact-form button:hover {
+  background-color: #d5b9a1;
+  font-weight: 800;
+}
+/* Botón para ir a arriba */
+.btnArriba {
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  padding: 5px 10px 30px 10px;
+  background-color: #000;
+  border-radius: 50px;
+  color: #f5f5f7;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 2;
+}
+/* Footer */
+footer {
+  background-color: #000;
+}
+footer h5 {
+  color: #715740;
+  font-weight: 800;
+}
+.lautaro {
+  color: #715740;
+}
+footer a {
+  text-decoration: none;
+}
+footer .list-inline-item i {
+  font-size: 23px;
+}
+
+/* Media querie */
+@media screen and(max-width: 576px) {
+  .btnArriba {
+    display: none;
+  }
+}

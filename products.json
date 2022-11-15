@@ -1,0 +1,23 @@
+[
+  {
+    "price": 199.99,
+    "id": 1,
+    "title": "Spanish Grammar Course",
+    "image": "media/spanish-grammar.png",
+    "description": "The idea of this course is to be able to start from scratch with Spanish grammar and go up to advanced topics. "
+  },
+  {
+    "price": 189.99,
+    "id": 2,
+    "title": "Spanish Pronunciation Course",
+    "image": "media/spanish-phonetics.jpg",
+    "description": "In this course we will analyze pronunciation and intonation in the Spanish language, and we will compare it with English. We will also delve into the most common phonological processes. "
+  },
+  {
+    "price": 179.99,
+    "id": 3,
+    "title": "Spanish Vocabulary Course",
+    "image": "media/spanish-vocabulary.png",
+    "description": "The idea of this course is to analyze common expressions in different contexts, and to work with audiovisual material to accompany the explanation, as well as to improve listening skills. "
+  }
+]
